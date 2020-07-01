@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "dfe54487-b5d4-4c84-bf52-87a283562f01",
+		"name": "P3 Parcial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "C",
+			"item": [
+				{
+					"name": "Punto 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "tipo",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "legajo",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}usuario",
+							"host": [
+								"{{url}}usuario"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}login",
+							"host": [
+								"{{url}}login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 3",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "materia",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "cuatrimestre",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "vacantes",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "profesor",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}materias",
+							"host": [
+								"{{url}}materias"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZW1haWwiOiJsdWlzQGx1aXMuY29tIiwiY2xhdmUiOiIxMjM0NTYiLCJ0aXBvX2lkIjoyLCJub21icmUiOiJsdWlzIiwibGVnYWpvIjoxNTAwfQ.R6Bg-abutIzZDEz4sI7QKiDZLS1QTRT4SDUC-BK0kf4",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "legajo",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "nombre",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "imagen",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost/Programacion3_SegundoParcial/public/materias/1",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"Programacion3_SegundoParcial",
+								"public",
+								"materias",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 5",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}materias/2/3",
+							"host": [
+								"{{url}}materias"
+							],
+							"path": [
+								"2",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 6",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}materias/2",
+							"host": [
+								"{{url}}materias"
+							],
+							"path": [
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Punto 7",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "{{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}materias",
+							"host": [
+								"{{url}}materias"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
