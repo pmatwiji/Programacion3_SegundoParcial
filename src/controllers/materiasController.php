@@ -125,8 +125,7 @@ class MateriasController{
         }
 
         if($decoded->tipo_id == 1) {
-            if
-            $success = true;
+
 
         } else {
             
